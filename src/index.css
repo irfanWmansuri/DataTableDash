@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+/* DataTable.css */
+.container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .table-wrapper {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  .data-table th, .data-table td{font-size: 15px; cursor: pointer;}
+  .dt-layout-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  /* 🔢 Entries per Page Dropdown */
+  .dt-length {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .dt-length label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .dt-length select {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+  }
+  
+  .dt-length select:hover,
+  .dt-length select:focus {
+    border-color: #007bff;
+  }
+  
+  /* 🔍 Search Box */
+  .dt-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .dt-search label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .dt-search input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+  }
+  
+  .dt-search input:focus {
+    border-color: #007bff;
+  }
+  
+  /* DataTable Styling */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  .data-table th, 
+  .data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .data-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .data-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* 🔍 Search Box Styling */
+  .dataTables_filter {
+    margin-bottom: 15px;
+    text-align: right;
+  }
+  
+  .dataTables_filter input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .dataTables_filter input:focus {
+    border-color: #007bff;
+  }
+  
+  /* 📌 Pagination Styling */
+  /* 📌 Pagination Container */
+.dt-paging {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  /* 📌 Pagination Buttons */
+  .dt-paging-button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* 📌 Hover & Focus Effects */
+  .dt-paging-button:hover,
+  .dt-paging-button:focus {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  /* 📌 Active Page Button */
+  .dt-paging-button.current {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* 📌 Disabled Buttons */
+  .dt-paging-button.disabled {
+    color: #aaa;
+    cursor: not-allowed;
+    border-color: #ddd;
+    background-color: #f8f8f8;
+  }
+  
+  /* 📌 First, Previous, Next, Last Buttons */
+  .dt-paging-button.first,
+  .dt-paging-button.previous,
+  .dt-paging-button.next,
+  .dt-paging-button.last {
+    font-weight: bold;
+  }
+  
+  /* 📌 Ellipsis */
+  .ellipsis {
+    padding: 8px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  
+  /* Loader */
+  .loader {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
